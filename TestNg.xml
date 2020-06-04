@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name="From BANK" parallel="classes" thread-count="6" >
+
+    <test name="From BANK">
+        <classes>
+            <class name="Test.TestOnBeck"/>
+        </classes>
+    </test>
+</suite>
