@@ -2,7 +2,7 @@ package Test;
 
 import BaseTest.ExampleRequest;
 import BaseTest.ExamplesParsingRequestBody;
-import SettersAndGetters.SettersAndGetters;
+import Constants.Constants;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.qameta.allure.Link;
 import org.apache.http.HttpStatus;
@@ -12,12 +12,12 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-import static SettersAndGetters.SettersAndGetters.getResponse;
+import static Constants.Constants.getResponse;
 
 public class TestOnBeck {
 
     ExamplesParsingRequestBody parse = new ExamplesParsingRequestBody();
-    SettersAndGetters setAndGet = new SettersAndGetters();
+    Constants setAndGet = new Constants();
 
     @Link(name = "Запрос юзеров", url = "https://reqres.in/api/users?page=2")
     @Test(description = "Get users list")

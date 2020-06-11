@@ -3,7 +3,7 @@ package Attachment;
 import com.jayway.restassured.response.Headers;
 import io.qameta.allure.Attachment;
 
-import static SettersAndGetters.SettersAndGetters.getResponse;
+import static Constants.Constants.getResponse;
 
 public class AttachmentAllure {
 

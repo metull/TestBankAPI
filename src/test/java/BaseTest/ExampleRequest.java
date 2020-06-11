@@ -1,17 +1,17 @@
 package BaseTest;
 
 import Attachment.AttachmentAllure;
-import SettersAndGetters.SettersAndGetters;
+import Constants.Constants;
 import com.jayway.restassured.response.Response;
 import org.apache.http.HttpStatus;
 
-import static SettersAndGetters.SettersAndGetters.setResponse;
+import static Constants.Constants.setResponse;
 import static com.jayway.restassured.RestAssured.expect;
 
 public class ExampleRequest {
 
     private final static ExampleRequest instance = new ExampleRequest();
-    private SettersAndGetters setAndGet = new SettersAndGetters();
+    private Constants setAndGet = new Constants();
     private AttachmentAllure attach = new AttachmentAllure();
 
     public static ExampleRequest getInstance() {
